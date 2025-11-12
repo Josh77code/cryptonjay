@@ -1,3 +1,5 @@
+import Image from "next/image"
+
 import { Navigation } from "@/components/navigation"
 import { Button } from "@/components/ui/button"
 
@@ -99,12 +101,15 @@ export default function AboutPage() {
                   <div className="relative bg-gradient-to-br from-card to-card/50 border-2 border-primary/30 rounded-2xl overflow-hidden shadow-2xl">
                     {/* Image placeholder */}
                     <div className="aspect-square bg-gradient-to-br from-muted to-muted/50 flex items-center justify-center relative overflow-hidden">
-                      <div className="absolute inset-0 bg-gradient-to-t from-primary/20 to-transparent" />
-                      <img
-                        src="/professional-web3-project-manager-portrait.jpg"
-                        alt="CRYPTONJAY Profile"
-                        className="w-full h-full object-cover"
-                      />
+                  <div className="absolute inset-0 bg-gradient-to-t from-primary/20 to-transparent" />
+                  <Image
+                    src="/cryptonjay professional.jpeg"
+                    alt="CRYPTONJAY Profile"
+                    fill
+                    sizes="(max-width: 768px) 280px, 360px"
+                    className="object-cover"
+                    priority
+                  />
                     </div>
 
                     {/* Info overlay */}
@@ -121,11 +126,11 @@ export default function AboutPage() {
                 {/* Stats */}
                 <div className="space-y-3">
                   <div className="bg-card border border-primary/20 rounded-lg p-4 text-center hover:border-primary/50 transition-all">
-                    <p className="text-2xl font-bold text-primary">2+</p>
-                    <p className="text-sm text-muted-foreground">Years in Web3</p>
+                    <p className="text-2xl font-bold text-primary">4+</p>
+                    <p className="text-sm text-muted-foreground">Years of Experience</p>
                   </div>
                   <div className="bg-card border border-primary/20 rounded-lg p-4 text-center hover:border-primary/50 transition-all">
-                    <p className="text-2xl font-bold text-primary">10K+</p>
+                    <p className="text-2xl font-bold text-primary">300K+</p>
                     <p className="text-sm text-muted-foreground">Community Members</p>
                   </div>
                 </div>
