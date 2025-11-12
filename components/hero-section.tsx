@@ -23,17 +23,19 @@ export function HeroSection() {
 
       <div className="container mx-auto relative z-10">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
-          <div className={`space-y-6 ${isVisible ? "animate-slide-in-left" : "opacity-0"}`}>
-            <h1 className="text-5xl lg:text-6xl font-bold leading-tight">
+          <div
+            className={`space-y-6 text-center lg:text-left ${isVisible ? "animate-slide-in-left" : "opacity-0"}`}
+          >
+            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold leading-tight">
               I'm Project Manager
               <br />
               <span className="text-primary animate-neon-text-glow">CRYPTONJAY</span>
             </h1>
-            <p className="text-lg text-muted-foreground max-w-xl leading-relaxed">
+            <p className="text-base sm:text-lg text-muted-foreground max-w-xl mx-auto lg:mx-0 leading-relaxed">
               Web3 specialist, Business Developer, Community Manager, and Business Analyst. I drive growth and
               innovation in blockchain projects through strategic partnerships and community engagement.
             </p>
-            <div className="flex gap-4">
+            <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
               <Button size="lg" className="bg-primary text-primary-foreground hover:bg-primary/90 font-semibold">
                 Learn More
               </Button>
@@ -49,7 +51,7 @@ export function HeroSection() {
           </div>
 
           <div className={`relative ${isVisible ? "animate-slide-in-right" : "opacity-0"}`}>
-            <div className="relative w-full max-w-md mx-auto h-96">
+            <div className="relative w-full max-w-md mx-auto h-[22rem] sm:h-96">
               {/* 3D Background glow */}
               <div className="absolute inset-0 bg-primary rounded-full blur-3xl opacity-20 animate-glow-pulse" />
 
